@@ -131,10 +131,23 @@ img {
 @media screen and (max-width: 768px) {
 
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 }
 @media screen and (max-width: 480px) {
 
+    .container {
+        max-width: 480px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col, .steps .col, .lessons .col, 
+    .why-us .col-left, .why-us .col-right {
+        width: 100%;
+        margin: auto;
+    }
     
 }
